@@ -1,0 +1,21 @@
+1. Both numbers change to the selected number
+2. TRISE sets selected bits to I or O
+TRISESET sets the predefined amount of bit to I or O
+TRISCLR sets the defined number of bits to 0 (clearing the bits)
+3. $s0
+4. Demo
+
+
+1. It resets the flag by executing IFS(0) = 0;
+2. It would continuosly iterate the check flag sequence, it would always be 1
+3. timeoutcount
+4. No, because the press has to be registered during the timer passing it.
+
+
+1. -||-
+2. It would go on forever
+3. ROW 209 vectors.s, because all interrupts are handled there
+4. registers have to be pushed in case they are used during the execution, and the values would be changed.
+in the end they have to be popped. Not all are saved because $s are save-registers, and
+the value should not be changed
+5. IPC and IEC, and processor-register v0. 
